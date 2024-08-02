@@ -30,7 +30,7 @@
                                     <a href='/products/<%= product.id %>' class="btn">Details
 
                                     </a>
-                                    <%- include("../includes/add-to-cart.ejs") {product : product} %>
+                                    <%- include("../includes/add-to-cart.ejs" , {product : product}) %>
                                 </div>
                             </article>
                             <% } %>
