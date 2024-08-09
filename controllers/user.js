@@ -1,10 +1,9 @@
 const User = require("../models/user-model");
 
-// GET /users - Retrieve all users and return as JSON
 exports.getUser = (req, res, next) => {
   User.findAll()
     .then((users) => {
-      res.json(users); // Return the users as JSON
+      res.json(users);
     })
     .catch((err) => {
       console.log(err);
@@ -12,7 +11,6 @@ exports.getUser = (req, res, next) => {
     });
 };
 
-// POST /users - Add a new user to the database
 exports.postAddUser = (req, res, next) => {
   const name = req.body.name;
   const phoneNo = req.body.phoneNo;
