@@ -10,10 +10,6 @@ const User = sequelize.define("user", {
     primaryKey: true,
   },
   name: Sequelize.STRING,
-  phoneNo: {
-    type: Sequelize.INTEGER,
-    allowNull: false,
-  },
   email: {
     type: Sequelize.STRING,
     allowNull: false,
